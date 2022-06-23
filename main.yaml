@@ -1,0 +1,22 @@
+
+
+name: 'My first github action'
+
+on: push
+
+jobs:
+  frist-job:
+    name: 'first job'
+
+    runs-on: ubountu-lastest
+
+    step:
+    -name : Say Hello world 1
+    shell: bash
+    run:
+      echo "hello World from step 1"
+
+    - name: Say Hello World 2
+      shell: pwsh
+      run:
+        echo "Hllow World from step 212"
